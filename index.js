@@ -39,7 +39,7 @@ app.use("/users", userRouter)
 app.use(auth)
 app.use("/notes", noteRouter)
 
-app.listen(process.env.port, async()=>{
+app.listen(8080, async()=>{
     try {
         await connection
         // connection.disconnect
